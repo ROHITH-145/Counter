@@ -22,6 +22,29 @@
 .reset{
   background-color:red ;
 }
+.show{
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  
+}
+.notshow{
+  background-color:red;
+  border-radius: 10px;
+  border: none;
 
-
+}
+.text{
+  padding-top: 300px;
+}
+.theme{
+  margin-top: -250px;
+  padding-left: 1000px;
+}
+.btn_t{
+  background-color: grey;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+}
 

@@ -5,14 +5,21 @@ import { useState } from 'react';
 
 function App() {
   const [darkMode,setDarkMode] = useState(false);
+
+  const [show,setnoshow] =useState(false);
+  
   return (
     <div className={darkMode ? "container dark":"container"}>
       <h1>Click Counter App</h1>
       <Counter/>
-      <button className='btn' onClick={()=> setDarkMode(!darkMode)}>
+      <div className='theme'>
+      <button className='btn_t' onClick={()=> setDarkMode(!darkMode)}>
         {darkMode ? "switch to light":"switch to dark"}
-      </button>
-      
+      </button></div>
+      <div className='text'>
+      <button className='show' onClick={()=>setnoshow(true)}>Show text</button>
+      <button className='notshow' onClick={()=>setnoshow(false)}>Not show text</button>
+      {show && <p>Hello</p>}</div>
     </div>
   );
 }
